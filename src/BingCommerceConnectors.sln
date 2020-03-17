@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29409.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BingCommerceEntityFrameworkConnector", "EntityFrameworkConnector\BingCommerceEntityFrameworkConnector.csproj", "{3F464142-B071-440A-9111-ED1E5308D771}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BingCommerceConnectorCore", "Core\BingCommerceConnectorCore.csproj", "{A15E8B5B-8009-451A-9AA5-881B46712C8E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BingCommerceConnectorCore.Tests", "Core.Tests\BingCommerceConnectorCore.Tests.csproj", "{DC32766F-E93C-459A-9D70-A38BDA1DB2CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|amd64 = Debug|amd64
+		Release|amd64 = Release|amd64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F464142-B071-440A-9111-ED1E5308D771}.Debug|amd64.ActiveCfg = Debug|amd64
+		{3F464142-B071-440A-9111-ED1E5308D771}.Debug|amd64.Build.0 = Debug|amd64
+		{3F464142-B071-440A-9111-ED1E5308D771}.Release|amd64.ActiveCfg = Release|amd64
+		{3F464142-B071-440A-9111-ED1E5308D771}.Release|amd64.Build.0 = Release|amd64
+		{A15E8B5B-8009-451A-9AA5-881B46712C8E}.Debug|amd64.ActiveCfg = Debug|amd64
+		{A15E8B5B-8009-451A-9AA5-881B46712C8E}.Debug|amd64.Build.0 = Debug|amd64
+		{A15E8B5B-8009-451A-9AA5-881B46712C8E}.Release|amd64.ActiveCfg = Release|amd64
+		{A15E8B5B-8009-451A-9AA5-881B46712C8E}.Release|amd64.Build.0 = Release|amd64
+		{DC32766F-E93C-459A-9D70-A38BDA1DB2CC}.Debug|amd64.ActiveCfg = Debug|amd64
+		{DC32766F-E93C-459A-9D70-A38BDA1DB2CC}.Debug|amd64.Build.0 = Debug|amd64
+		{DC32766F-E93C-459A-9D70-A38BDA1DB2CC}.Release|amd64.ActiveCfg = Release|amd64
+		{DC32766F-E93C-459A-9D70-A38BDA1DB2CC}.Release|amd64.Build.0 = Release|amd64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		        SolutionGuid = {95BCA356-29C3-456D-A22B-000782ACF01F}
+		SolutionGuid = {D67C5FE1-CBCC-47D4-A368-5FFF650AF809}
+	EndGlobalSection
+EndGlobal
