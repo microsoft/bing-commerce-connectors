@@ -1,0 +1,24 @@
+﻿ConnectorConfig:
+    ScanInterval: <THE POLLING INTERVAL TIMESPAN - E.G. 00:01:00 FOR ONE MIN>(Default: 00:00:00 - OFF)
+
+PushConfig:
+    TenantId: <YOUR TENANT ID>(Required)
+    IndexId:  <YOUR INDEX ID>(Required)
+    AccessToken: <YOUR BING COMMERCE API ACCESS TOKEN>(Default: env variable {ACCESS_TOKEN})
+    PushFormat: <JsonArray|NDJson|CSV|TSV>(Default JsonArray)
+    MaxBatchCount: <MAX NUMBER OF RECORDS PER PUSH CALL>(Default: 1000)
+    MaxRequestSize: <MAX SIZE OF REQUEST IN BYTES>(Default: 0 -- OFF)
+    MaxConcurrentRequests: <MAX NUMBER OF CONCURRENT REQUESTS TO THE BING FOR COMMERCE PUSH API>(Default: 100)
+    RequestLog: <None|DeadletterOnly|All>(Default: None)
+    RequestLogLocation: <DIRECTORY TO STORE FULL REQUEST LOGS AT>(Default: null)
+    TrackingInterval: <THE INTERVAL AT WHICH TO POLL FOR PUSH REQUEST STATUS>(Default: 00:00:00 - OFF)
+    RetryCount: <THE NUMBER OF RETRIES BEFOR DEADLETTERING A REQUEST>(Default: 5)
+    MaxBufferWaitMs: <FOR BUFFERED PUSHER -- MAXIMUM DELAY BETWEEN EVENTS TO ALLOW BEFOR SENDING THE REQUEST>(Default: 1000)
+
+DatabaseConfig:
+    ConnectionString: <THE CONNECTION STRING TO YOUR DB>(Required)
+    Server: <THE DB SERVER - CURRENTLY SqlServer|MySql|PostreSQL|Sqlite>(Default: SqlServer)
+    SqlStatement: <SQL STATEMENT FOR THE INITIAL POLL WITHOUT A VALID CHECKPOINT>(Required)
+    UpdateSqlStatement: <SQL STATEMENT FOR INCREMENTAL POLLS>(Required)
+    CheckpointColumn: <CHECKPOINT COLUMN NAME>(Required)
+    CheckpointFile: <FILE TO STORE THE CHECKPOINT>(Required)
