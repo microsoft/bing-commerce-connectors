@@ -1,14 +1,14 @@
 # Table of Contents
 
 * ### [Introduction](#bing-for-commerce-connector).
-* ### [Architecture](#architecture).
-* ### [Classes](#classes).
+* ### [Architecture](#architecture-1).
+* ### [Classes](#classes-1).
 * ### [Characteristics](#connector-characteristics).
-  * #### [Polling Connector](#polling-connector)
-  * #### [Simple Bing Commerce Pusher](#simple-bing-commerce-pusher) 
-  * #### [Buffered Bing Commerce Pusher](#buffered-bing-commerce-pusher)
-* ### [Entity Framework Connector](#entity-framework-connector)
-  * #### [Sample SQL Server database setup](#sample-sql-server-database-setup)
+  * #### [Polling Connector](#polling-connector-1)
+  * #### [Simple Bing Commerce Pusher](#simple-bing-commerce-pusher-1) 
+  * #### [Buffered Bing Commerce Pusher](#buffered-bing-commerce-pusher-1)
+* ### [Entity Framework Connector](#entity-framework-connector-1)
+  * #### [Sample SQL Server database setup](#sample-sql-server-database-setup-1)
 
 # Bing for Commerce Connector
 
