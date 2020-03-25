@@ -1,6 +1,7 @@
 # Table of Contents
 
 * ### [Introduction](#bing-for-commerce-connector).
+* ### [Packages](#nuget-packages).
 * ### [Architecture](#architecture-1).
 * ### [Classes](#classes-1).
 * ### [Characteristics](#connector-characteristics).
@@ -13,6 +14,13 @@
 # Bing for Commerce Connector
 
 This document covers the Bing for Commerce Connector design, and how developers can integrate with the connector core in order to create new connectors with new data sources. The document will also explain how the Entity Framework Connector was built in top of the connector core to create a connector that polls data from any Entity Framework Core supported engine.
+
+# Nuget Packages
+
+Both the core library as well a the entity framework connector are published on Nuget. To find them, please refer to:
+
+* [Bing for Commerce Data Connector Core library](https://www.nuget.org/packages/Microsoft.Bing.Commerce.Connectors.Core/).
+* [Bing for commerce Entity Framework Data Connector](https://www.nuget.org/packages/Microsoft.Bing.Commerce.Connectors.EntityFramework/).
 
 # Architecture
 
@@ -70,11 +78,17 @@ This is created mostly for an added support for event based connector scenarios.
 This Connector is built using the polling connector, which polls new data updates every certain interval of time. For that it implements a data reader which retrieves all records after a certain checkpoint. The connector will be expecting a few configurations from the consumer:
 
 * **ConnectionString:** The Entity Framework compatible connection string to your database.
-* **Server:** The Server type. currently supports Sql Server, My Sql, Postre Sql and Sqlite.
+* **Server:** The Server type. currently supports Sql Server, My Sql, PostgreSQL and Sqlite.
 * **SqlStatement:** The sql statement to poll all the data from the server at the first run.
 * **UpdateSqlStatement:** The sql statement to poll the updated data after a given checkpoint.
 * **CheckpointColumn:** The name of the checkpoint column. This will serve as a way for the connector to keep it up to date, and to make sure it's not used in the data pushed to the Bing for Commerce backend.
 * **CheckpointFile:** The file path to where you need the checkpoint data to be stored at.
+
+## Prerequisites
+
+* [.NET core 2.1 or later](https://dotnet.microsoft.com/download/dotnet-core).
+* [Bing for Commerce Tenant and Index](https://commerce.bing.com).
+* Source data store that supports Entity Framework, like Sql Server, My Sql, PostgreSQL and Sqlite.
 
 ## Sample SQL Server database setup
 
